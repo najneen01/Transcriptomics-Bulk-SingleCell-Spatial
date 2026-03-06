@@ -32,9 +32,9 @@ library(png)
 
   
 #install.packages("Seurat")
-#ls("package:Seurat")  # Lists all functions in Seurat
+#ls("package:Seurat")  
 
-#install.packages("remotes")  # Install remotes if not already installed
+#install.packages("remotes")  
 #remotes::install_github("satijalab/seurat-data", force = TRUE)
 
 #install.packages("tiff")
@@ -329,11 +329,11 @@ library(ggrepel)
 
 
 library(ggplot2)
-library(ggrepel)  # Load ggrepel for label repelling
+library(ggrepel)  
 
 # Define thresholds
-logFC_threshold <- 0.5  # Log2 fold change threshold
-pval_threshold <- 0.05  # Adjusted p-value threshold
+logFC_threshold <- 0.5  
+pval_threshold <- 0.05  
 
 # Classify genes based on significance
 de_genes$Significance <- ifelse(
@@ -370,7 +370,7 @@ ggplot(de_genes, aes(x = avg_log2FC, y = -log10(p_val_adj), color = Significance
 
 library(Seurat)
 
-# Visualize expression of specific genes in Seurat object
+# Visualize expression of specific genes in Seurat object------------------------
 FeaturePlot(seurat_obj, features = c("ERBB2", "COL6A3", "VIM", "GRB7", "NDUFB9", "FOXD1"))
 
 
@@ -393,13 +393,13 @@ levels(seurat_obj)
 
 
 
-# Perform differential expression between Cluster 0 and Cluster 1
+# Perform differential expression between Cluster 0 and Cluster 1-------------------------------
 de_genes <- FindMarkers(seurat_obj, ident.1 = "0", ident.2 = "1")
 print(de_genes)
 
 
 
-#Prepare a ranked gene list-----
+#Prepare a ranked gene list-----------------------------------
 # Create a ranked gene list based on avg_log2FC
 ranked_genes <- de_genes[, "avg_log2FC"]
 names(ranked_genes) <- rownames(de_genes)
@@ -419,7 +419,7 @@ library(org.Hs.eg.db)  # Human gene annotation
 
 
 
-#Retrieve KEGG Pathway Gene Sets-----
+#Retrieve KEGG Pathway Gene Sets----------------------------------------------------------------------------------------
 # Download KEGG pathways for humans
 kegg_pathways <- enrichKEGG(gene = NULL, organism = "hsa", keyType = "kegg")
 
@@ -444,7 +444,7 @@ head(kegg_pathways@result)
 
 
 
-#Extract Pyrimidine Pathway Genes----
+#Extract Pyrimidine Pathway Genes----------------------------------------------------------------------------------------
 # Extract the gene set for Pyrimidine metabolism (KEGG ID: hsa00240)
 pyrimidine_genes <- kegg_pathways@result[kegg_pathways@result$ID == "hsa00240", "geneID"]
 
@@ -464,7 +464,7 @@ head(pyrimidine_gene_list)
 
 
 
-#Run GESA---
+#Run GESA------------------------------------------------------------------------------------------------
 gsea_results <- GSEA(
   geneList = ranked_genes,  # Ranked gene list from FindMarkers
   TERM2GENE = pyrimidine_gene_list,  
