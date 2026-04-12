@@ -4,14 +4,15 @@
 This repository contains datasets and analysis workflows for **bulk RNA-seq, single-cell RNA-seq, and spatial transcriptomics** studies. 
 
 ## Datasets
-
-- **Bulk RNA-seq** – **GSE247791** (`1_Bulk_cell/bulk_GSE247791`)  
+# **Bulk RNA-seq – GSE247791** (`1_Bulk_cell/bulk_GSE247791`)
+ 
   Bulk transcriptomic gene expression data for differential expression analysis.  
   [GEO Dataset Link](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE247791)
   
   [Go to Bulk RNA-seq README](1_Bulk_cell/README.md)
   
    ![Enhanced Volcano Plot](1_Bulk_cell/result/Enhanced_volcano.jpeg)
+  ![Heatmap](1_Bulk_cell/result/heatmap.jpeg).
 
 
 - **Single-Cell RNA-seq** – **GSE275330** (`2_Single_cell/Single_cell_GSE275330`)  
