@@ -187,13 +187,17 @@ cat("Downregulated Genes:\n", paste(downregulated_genes, collapse = ", "), "\n")
 
 
 
-
-
-
-
-
 # Save the results to a file
 write.csv(as.data.frame(res), file="deseq2_results.csv")
+
+
+# Save full results for Upregulated and Downregulated DEGs
+write.csv(as.data.frame(res_clean[res_clean$log2FoldChange > 1 & res_clean$padj < 0.05, ]), "result/upregulated_DEGs_full.csv")
+write.csv(as.data.frame(res_clean[res_clean$log2FoldChange < -1 & res_clean$padj < 0.05, ]), "result/downregulated_DEGs_full.csv")
+
+
+
+
 
 
 
