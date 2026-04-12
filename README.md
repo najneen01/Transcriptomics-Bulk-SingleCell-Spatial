@@ -1,4 +1,5 @@
 # Transcriptomics Analysis Repository
+![GitHub](https://img.shields.io/badge/status-active-brightgreen)
 
 This repository contains datasets and analysis workflows for **bulk RNA-seq, single-cell RNA-seq, and spatial transcriptomics** studies. 
 
@@ -7,8 +8,10 @@ This repository contains datasets and analysis workflows for **bulk RNA-seq, sin
 - **Bulk RNA-seq** – **GSE247791** (`1_Bulk_cell/bulk_GSE247791`)  
   Bulk transcriptomic gene expression data for differential expression analysis.  
   [GEO Dataset Link](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE247791)
+  
   [Go to Bulk RNA-seq README](1_Bulk_cell/README.md)
-   1_Bulk_cell/result/Enhanced_volcano.jpeg
+  
+   ![Enhanced Volcano Plot](1_Bulk_cell/result/Enhanced_volcano.jpeg)
 
 
 - **Single-Cell RNA-seq** – **GSE275330** (`2_Single_cell/Single_cell_GSE275330`)  
