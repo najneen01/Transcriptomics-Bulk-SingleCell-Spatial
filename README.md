@@ -17,6 +17,12 @@ This repository contains datasets and analysis workflows for **bulk RNA-seq, sin
 # *Single-Cell RNA-seq* (`2_Single_cell/`)  
   Single-cell RNA-seq data for studying cellular heterogeneity and clustering.  
   [GEO Dataset Link](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE275330)
+  
+   [Go to Single RNA-seq README](1_Single_cell/README.md)
+   
+  ![umap](2_Single_cell/result/umap_tsne.png)
+
+  
 
 # *Spatial Transcriptomics* (`3_Spatial/`)  
   Spatial gene expression profiling of breast cancer tissue sections using 10x Visium CytAssist technology.  
