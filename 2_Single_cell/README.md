@@ -70,17 +70,28 @@ markers.csv: A list of all cluster markers with p-values and fold-change logic.
 
 umap_tsne.png: Side-by-side comparison of UMAP and t-SNE projections.
 
-  ![umap](2_Single_cell/result/umap_tsne.png)
-
-
 heatmap.png: Expression heatmap of the top 10 markers per cluster.
-
-  ![heatmap](2_Single_cell/result/heatmap.png)
-
 
 featureplot.png: Spatial expression plots for key genes (PRKCA, ITCH, ABL2, ALCAM).
  
-  ![featureplot](2_Single_cell/result/featureplot.png)
+
+### Visualizations
+
+#### UMAP & t-SNE Comparison
+Side-by-side comparison of dimensional reductions.
+![umap_tsne](result/umap_tsne.png)
+
+#### Cluster Heatmap
+Expression heatmap of the top 10 markers per cluster.
+![heatmap](result/heatmap.png)
+
+#### Feature Plots
+Spatial expression plots for key genes: *PRKCA, ITCH, ABL2, ALCAM*.
+![featureplot](result/featureplot.png)
+
+
+
+
 
 
 
