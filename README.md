@@ -26,6 +26,8 @@ This repository contains a reproducible Snakemake pipeline for processing single
 
 # *Spatial Transcriptomics* (`3_Spatial/`)  
   Spatial gene expression profiling of breast cancer tissue sections using 10x Visium CytAssist technology.  
-  [10x Genomics Dataset](https://www.10xgenomics.com/datasets/fresh-frozen-visium-on-cytassist-human-breast-cancer-probe-based-whole-transcriptome-profiling-2-standard)
+
+
+   [Go to Spatial README](3_Spatial/README.md)
 
 ## Click on each project above for full details, figures, and datasets.
