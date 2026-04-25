@@ -30,4 +30,7 @@ This repository contains a reproducible Snakemake pipeline for processing single
 
    [Go to Spatial README](3_Spatial/README.md)
 
+   ![umap](https://raw.githubusercontent.com/najneen01/transcriptomics-snakemake/main/3_Spatial/result/umap.jpeg)
+
+
 ## Click on each project above for full details, figures, and datasets.
