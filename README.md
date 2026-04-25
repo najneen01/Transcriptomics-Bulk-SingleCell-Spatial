@@ -8,7 +8,7 @@ This repository contains datasets and analysis workflows for **bulk RNA-seq, sin
  
   Bulk transcriptomic gene expression data for differential expression analysis.  
   
-  [Go to Bulk RNA-seq README](1_Bulk_cell/README.md)
+  [Go to Bulk RNA-seq folder](1_Bulk_cell/)
   
    ![Enhanced Volcano Plot](1_Bulk_cell/result/Enhanced_volcano.jpeg)
 
